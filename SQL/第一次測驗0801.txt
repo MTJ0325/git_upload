@@ -126,7 +126,7 @@ values ('12','H004','C008','苗栗縣頭份市信義里中正路116號',78,1,'M003');
 
 
 --4-1、4-2、4-3
-SELECT 轄管分局, COUNT(轄管分局) OVER (PARTITION BY 轄管分局) AS 轄管分局數, 分局電話, 設施地址, 類別 
+SELECT 轄管分局, 分局電話, 設施地址,  COUNT(設施地址) OVER (PARTITION BY 設施地址) AS 設施數, 類別 
 FROM 總表
 FULL JOIN 轄管分局資料表 
 ON 總表.轄管分局代碼 = 轄管分局資料表.轄管分局代碼
