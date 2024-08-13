@@ -79,7 +79,7 @@ public class PracticeSeven {
 			}
 		}
 	}
-// private static void 
+
 
 	private static void querymethod() {
 		try (Connection conn = DriverManager.getConnection(CONN_URL, USER_NAME, PASSWORD);
@@ -95,8 +95,8 @@ public class PracticeSeven {
 			ResultSet queryResultSet = pstmt.executeQuery();
 			while (queryResultSet.next()) {
 				System.out.printf("製造商：%s，型號：%s，售價：%s，底價：%s", queryResultSet.getString("MANUFACTURER"),
-						queryResultSet.getString("TYPE"), queryResultSet.getString("MIN_PRICE"),
-						queryResultSet.getString("PRICE"));
+						queryResultSet.getString("TYPE"), queryResultSet.getString("PRICE"),
+						queryResultSet.getString("MIN_PRICE"));
 			}
 
 		} catch (SQLException e) {
