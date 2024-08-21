@@ -1,0 +1,99 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【模擬封裝與私有-map】</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .inputGroup {
+            margin-bottom: 15px;
+        }
+
+        .inputGroup label {
+            display: inline;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .inputGroup input {
+
+            padding: 8px;
+            /* box-sizing: border-box; */
+        }
+
+        #keyInput {
+            margin-right: 25px;
+        }
+
+        #valueInput {
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .separator1 {
+            height: 2px;
+            width: 75%;
+            background-color: #ccc;
+            margin: 20px 0 15px 0;
+        }
+
+        .separator2 {
+            height: 2px;
+            width: 75%;
+            background-color: #ccc;
+            margin: 30px 0 15px 0;
+        }
+
+        #result {
+            white-space: pre-wrap;
+        }
+    </style>
+    <script src="HashMap.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>【模擬封裝與私有-map】</h1>
+        <div class="inputGroup">
+            <label for="key" id="keyInput">KEY</label>
+            <input type="text" id="key">
+        </div>
+        <div class="inputGroup">
+            <label for="value" id="valueInput">VALUE</label>
+            <input type="text" id="value">
+        </div>
+        <div class="separator1"></div>
+        <button id="put">PUT</button>
+        <button id="clear">CLEAR</button>
+        <div class="separator2"></div>
+        <h2>【RESULT】</h2>
+        <pre id="result"></pre>
+    </div>
+</body>
+
+</html>
